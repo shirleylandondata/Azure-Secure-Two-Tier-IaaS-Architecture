@@ -1,4 +1,4 @@
-# Lab 02 — Building a Secure 2-Tier Web Application on Azure
+# Azure Secure Two-Tier IaaS Architecture
 
 ![Platform](https://img.shields.io/badge/platform-Microsoft%20Azure-0078D4?logo=microsoftazure&logoColor=white)
 ![OS](https://img.shields.io/badge/OS-Ubuntu%2024.04%20LTS-E95420?logo=ubuntu&logoColor=white)
