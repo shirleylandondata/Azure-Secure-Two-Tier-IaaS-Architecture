@@ -9,27 +9,31 @@ A hands-on Microsoft Azure infrastructure project demonstrating the deployment a
 
 The environment separates a public-facing Linux web server from a private back-end server using dedicated Azure subnets, Network Security Groups, SSH key authentication, and private IP networking. The back-end VM has no public IP address, reducing its exposure to direct internet traffic.
 
-*Estimated Time: 60 minutes · Difficulty: Beginner*
 
----
+## Project Highlights
 
-## What This Project Demonstrates
+Built and secured a two-tier Microsoft Azure IaaS environment that separates a public-facing Linux web server from a private back-end server.
 
-- Azure IaaS deployment and virtual machine administration
-- Virtual Network design using segmented application subnets
-- Public and private IP addressing
-- Network Security Group configuration and CIDR-based access control
-- SSH key authentication from Windows to Linux using PuTTY
-- PEM-to-PPK private key conversion using PuTTYgen
-- Private network connectivity testing between Azure VMs
-- Isolation of a back-end server from direct internet access
-- Least-privilege network security concepts
+### Key Accomplishments
 
----
+- Designed an Azure Virtual Network with separate web and database subnets to segment application traffic.
+- Deployed and administered Ubuntu Linux virtual machines across public and private network tiers.
+- Protected the back-end VM from direct internet exposure by deploying it without a public IP address.
+- Configured Azure Network Security Group rules to permit traffic from the web subnet (`10.0.1.0/24`) to the private tier.
+- Established SSH access from a Windows workstation to Azure Linux using PuTTY and SSH key authentication.
+- Converted an Azure-generated PEM private key to PuTTY's PPK format using PuTTYgen.
+- Validated private VNet connectivity between `vm-web-01` and `vm-db-01` using ICMP testing.
+- Documented the architecture, security controls, network addressing, deployment process, and validation results.
+
+### Technologies
+
+`Microsoft Azure` · `Azure Virtual Machines` · `Azure Virtual Network` · `Network Security Groups` · `Ubuntu Linux` · `SSH` · `PuTTY` · `PuTTYgen` · `TCP/IP` · `CIDR`
+
+--
 
 ## Table of Contents
 
-- [What This Project Demonstrates](#what-this-project-demonstrates)
+- [Key Accomplishments](#key-Accommplishments)
 - [Objective](#objective)
 - [Architecture Diagram](#architecture-diagram)
 - [Prerequisites](#prerequisites)
