@@ -117,7 +117,7 @@ The database VM is deployed without a public IP address, preventing direct inbou
 4. **Review + create** → **Create**.
 
 <!-- 📸 Screenshot: VNet address space + subnet configuration blade -->
-![VNet configuration screenshot placeholder](./screenshots/01-vnet-subnet-configuration.png)
+![VNet configuration screenshot placeholder](./images/01-vnet-subnet-configuration.png)
 
 ---
 
