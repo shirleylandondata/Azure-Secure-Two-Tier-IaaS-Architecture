@@ -139,7 +139,7 @@ The database VM is deployed without a public IP address, preventing direct inbou
 5. Download the private key (`.pem`) if prompted — **store it securely, it is not recoverable.**
 
 <!-- 📸 Screenshot: vm-web-01 overview blade showing assigned public IP -->
-![vm-web-01 overview screenshot placeholder](./screenshots/02-web-server-overview.png)
+![vm-web-01 overview screenshot placeholder](./images/02-web-server-overview.png)
 
 ---
 
@@ -161,7 +161,7 @@ The database VM is deployed without a public IP address, preventing direct inbou
 4. **Review + create** → **Create**.
 
 <!-- 📸 Screenshot: vm-db-01 networking tab confirming subnet=snet-db, Public IP=None -->
-![vm-db-01 overview screenshot placeholder](./screenshots/03-private-database-server-overview.png)
+![vm-db-01 overview screenshot placeholder](./images/03-private-database-server-overview.png)
 
 ---
 
@@ -191,7 +191,7 @@ Because `vm-db-01` has no public IP, it cannot be reached directly from my local
    Successful replies confirm both servers are connected inside the same VNet. Press `Ctrl + C` to stop the ping.
 
 <!-- 📸 Screenshot: terminal output of successful ping from vm-web-01 to 10.0.2.4 -->
-![Ping connectivity test screenshot placeholder](./screenshots/04-web-to-database-connectivity.png)
+![Ping connectivity test screenshot placeholder](./images/04-web-to-database-connectivity.png)
 
 ---
 
@@ -218,7 +218,7 @@ At this point `vm-db-01` still accepts any traffic on its subnet-level default r
 > **Note:** `vm-db-01` has no public IP, so it is not reachable from the internet regardless of NSG configuration. The default SSH inbound rule created during VM setup still shows `Source: Any` — that rule only matters if a public IP is later attached. The `Allow-Web-Subnet` rule is the one that explicitly documents and enforces least-privilege access: only the web subnet's internal traffic is permitted.
 
 <!-- 📸 Screenshot: Allow-Web-Subnet inbound NSG rule configuration -->
-![NSG inbound rule screenshot placeholder](./screenshots/05-database-nsg-inbound-rules.png)
+![NSG inbound rule screenshot placeholder](./images/05-database-nsg-inbound-rules.png)
 
 ---
 
